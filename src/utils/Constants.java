@@ -30,4 +30,6 @@ public class Constants {
 	
 	public static final Integer MAX_AGE= Integer.MIN_VALUE;
 	
+public static final String USER_DATE_FORMAT ="MM/dd/yyyy";
+	
 }

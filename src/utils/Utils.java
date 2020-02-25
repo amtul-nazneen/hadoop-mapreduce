@@ -72,10 +72,10 @@ public class Utils {
 			return null;
 	}
 	
-	public static int calculateAge(String s) throws ParseException {
+	public static int computeAge(String s) throws ParseException {
 
 		Calendar today = Calendar.getInstance();
-		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+		SimpleDateFormat sdf = new SimpleDateFormat(Constants.USER_DATE_FORMAT);
 		Date date = sdf.parse(s);
 		Calendar dob = Calendar.getInstance();
 		dob.setTime(date);
@@ -86,12 +86,12 @@ public class Utils {
 
 		int curMonth = today.get(Calendar.MONTH);
 		int dobMonth = dob.get(Calendar.MONTH);
-		if (dobMonth > curMonth) { // this year can't be counted!
+		if (dobMonth > curMonth) {
 			age--;
-		} else if (dobMonth == curMonth) { // same month? check for day
+		} else if (dobMonth == curMonth) { 
 			int curDay = today.get(Calendar.DAY_OF_MONTH);
 			int dobDay = dob.get(Calendar.DAY_OF_MONTH);
-			if (dobDay > curDay) { // this year can't be counted!
+			if (dobDay > curDay) { 
 				age--;
 			}
 		}

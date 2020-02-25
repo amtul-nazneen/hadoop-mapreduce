@@ -65,7 +65,7 @@ public class Question4 {
 					String[] info = line.split(Constants.COMMA);
 					if (info.length == 10) {
 						try {
-							int age = Utils.calculateAge(info[9]);
+							int age = Utils.computeAge(info[9]);
 							userAgeMap.put(Utils.toInt(info[0]), age);
 						} catch (ParseException e) {
 							e.printStackTrace();
