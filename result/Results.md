@@ -30,7 +30,6 @@ Implementing Hadoop/MapRedue to analyse the Social Network Data
      * **18676,18712**	99
      * **18722,18729**	99
  *Output format: UserA id, UserB id, list of [names: date of birth (mm/dd/yyyy)] of their mutual Friends.
- * 
 
 ### Question 3 
 1. Use in-memory join to answer this question. Given any two Users (they are friends) as input, output the list of the names and the date of birth (mm/dd/yyyy) of their mutual friends. Use the userdata.txt to get the extra user information. 
