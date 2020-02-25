@@ -3,9 +3,8 @@ Implementing Hadoop/MapRedue to analyse the Social Network Data
 
 ### Question 1 
 1. Write a MapReduce program in Hadoop that implements a simple “Mutual/Common friend list of two friends". The key idea is that if two people are friend then they have a lot of mutual/common friends. 
-     * Input: soc-LiveJournal1Adj.txt contains the adjacency list and the userdata.txt contains dummy data 
-     * Output: One line for users ``(0,1), (20, 28193), (1, 29826), (6222, 19272), (28041, 28056)`` in the following format
-              * UserA,UserB TAB <Mutual/Common Friend List>           
+     * Input: ``soc-LiveJournal1Adj.txt`` contains the adjacency list and the ``userdata.txt`` contains dummy data 
+     * Output: One line for users ``(0,1), (20, 28193), (1, 29826), (6222, 19272), (28041, 28056)`` in the following format ``UserA,UserB TAB <Mutual/Common Friend List>``           
 2. Results
      * **0,1**	5,20 
      * **1,29826**	
@@ -15,9 +14,8 @@ Implementing Hadoop/MapRedue to analyse the Social Network Data
      
 ### Question 2 
 1. Find friend pairs whose common friend number are within the top-10 in all the pairs.Output them in decreasing order 
-     * Input: soc-LiveJournal1Adj.txt contains the adjacency list and the userdata.txt contains dummy data 
-     * Output Format:  UserA,UserB TAB <Mutual/Common Friend List>
-              * UserA,UserB TAB <Mutual/Common Friend List>           
+     * Input: ``soc-LiveJournal1Adj.txt`` contains the adjacency list and the ``userdata.txt`` contains dummy data 
+     * Output Format: ``UserA,UserB TAB <Mutual/Common Friend List>``        
 2. Results
      * **18683,18728**	99 
      * **18688,18728**	99	
@@ -29,19 +27,18 @@ Implementing Hadoop/MapRedue to analyse the Social Network Data
      * **18695,18711**	99
      * **18676,18712**	99
      * **18722,18729**	99
- *Output format: UserA id, UserB id, list of [names: date of birth (mm/dd/yyyy)] of their mutual Friends.
 
 ### Question 3 
 1. Use in-memory join to answer this question. Given any two Users (they are friends) as input, output the list of the names and the date of birth (mm/dd/yyyy) of their mutual friends. Use the userdata.txt to get the extra user information. 
-     * Input: soc-LiveJournal1Adj.txt contains the adjacency list and the userdata.txt contains dummy data 
-     * Output Format: UserA id, UserB id, list of [names: date of birth (mm/dd/yyyy)] of their mutual Friends.          
+     * Input: ``soc-LiveJournal1Adj.txt`` contains the adjacency list and the ``userdata.txt`` contains dummy data 
+     * Output Format: ``UserA id, UserB id, list of [names: date of birth (mm/dd/yyyy)]`` of their mutual Friends.          
 2. Results
      * **28041,28056**	Taylor:8/17/1973,Carl:11/10/1981,Stephanie:9/21/1965
       
 ### Question 4 
 1. Use reduce-side join and job chaining. Calculate the maximum age of the direct friends of each user. Sort the users based on the calculated maximum age in descending order as described in step 1. Output the top 10 users with their address and the calculated maximum age. 
-     * Input: soc-LiveJournal1Adj.txt contains the adjacency list and the userdata.txt contains dummy data 
-     * Output Format: User A, 1000 Anderson blvd, Dallas, TX, 60.          
+     * Input: ``soc-LiveJournal1Adj.txt`` contains the adjacency list and the ``userdata.txt`` contains dummy data 
+     * Output Format: ``User A, 1000 Anderson blvd, Dallas, TX, 60``          
 2. Results     
      * Otis Moye,547 Wright Court,Birmingham,Alabama,35205,US	90
      * Sandy Poole,4391 C Street,Worcester,Massachusetts,1609,US	90
