@@ -40,13 +40,13 @@ Implementing Hadoop/MapRedue to analyse the Social Network Data
      * Input: ``soc-LiveJournal1Adj.txt`` contains the adjacency list and the ``userdata.txt`` contains dummy data 
      * Output Format: ``User A, 1000 Anderson blvd, Dallas, TX, 60``          
 2. Results     
-     * Otis Moye,547 Wright Court,Birmingham,Alabama,35205,US	90
-     * Sandy Poole,4391 C Street,Worcester,Massachusetts,1609,US	90
-     * Patricia Bailey,3404 Margaret Street,Houston,Texas,77006,US	90
-     * Steven Reeves,677 Ella Street,Palo Alto,California,94301,US	90
-     * Joseph Garrison,3887 Sardis Station,Eagan,Minnesota,55121,US	90
-     * Evangeline Stewart,3353 Airplane Avenue,Hartford,Connecticut,6182,US	90
-     * Cora Flores,3257 Lee Avenue,Camden,New Jersey,8104,US	90
-     * Dorothy Wallner,2121 Rollins Road,Big Springs,Nebraska,69122,US	90
-     * Leroy Roy,2619 Bassel Street,Metairie,Louisiana,70001,US	90
-     * Ronald Kale,3646 Frederick Street,El Paso,Texas,79922,US	90
+     * 10240, 547 Wright Court, Birmingham,Alabama, 35205, US	90
+     * 1560, 4391 C Street, Worcester, Massachusetts, 1609, US	90
+     * 43912, 3404 Margaret Street, Houston, Texas, 77006, US	90
+     * 43918, 677 Ella Street, Palo Alto, California, 94301, US	90
+     * 44049, 3887 Sardis Station, Eagan, Minnesota, 55121, US	90
+     * 44066, 3353 Airplane Avenue, Hartford,Connecticut, 6182, US	90
+     * 44068, 3257 Lee Avenue, Camden, New Jersey, 8104, US	90
+     * 44075, 2121 Rollins Road, Big Springs, Nebraska, 69122, US	90
+     * 44083, 2619 Bassel Street, Metairie, Louisiana, 70001, US	90
+     * 44101, 3646 Frederick Street, El Paso, Texas, 79922, US	90

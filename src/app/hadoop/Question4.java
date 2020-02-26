@@ -145,7 +145,7 @@ public class Question4 {
 				while (line != null) {
 					String[] info = line.split(Constants.COMMA);
 					if (info.length == 10) {
-						userDataMap.put(Integer.parseInt(info[0]), info[1]+" "+info[2]+","+info[3]+","+info[4]+","+info[5]+","+info[6]+","+info[7]);
+						userDataMap.put(Integer.parseInt(info[0]), info[0]+","+info[3]+","+info[4]+","+info[5]+","+info[6]+","+info[7]);
 					}
 					line = br.readLine();
 				}
