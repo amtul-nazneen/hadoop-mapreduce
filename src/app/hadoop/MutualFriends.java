@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-public class Question1 {
+public class MutualFriends {
 
 	public static class Q1Map1 extends Mapper<LongWritable, Text, Text, Text> {
 
@@ -84,8 +84,8 @@ public class Question1 {
 		String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
 
 		@SuppressWarnings("deprecation")
-		Job job = new Job(conf, "Question1");
-		job.setJarByClass(Question1.class);
+		Job job = new Job(conf, "MutualFriends");
+		job.setJarByClass(MutualFriends.class);
 		job.setMapperClass(Q1Map1.class);
 		job.setReducerClass(ReducerClass.class);
 

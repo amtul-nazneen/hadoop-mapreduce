@@ -33,7 +33,7 @@ import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.util.HashMap;
 
-public class Question4 {
+public class ReduceSideJoin {
 	
 	/* ----------------------------------- Job 1 ----------------------------------- */
 	public static class Q4Map1 extends Mapper<LongWritable, Text, Text, Text> {
@@ -168,9 +168,9 @@ public class Question4 {
 		String[] otherArgs = new GenericOptionsParser(conf1, args).getRemainingArgs();
 
 		conf1.set(Constants.USERDATA, otherArgs[2]);
-		Job job1 = Job.getInstance(conf1, "Question4_1");
+		Job job1 = Job.getInstance(conf1, "ReduceSideJoin_1");
 
-		job1.setJarByClass(Question4.class);
+		job1.setJarByClass(ReduceSideJoin.class);
 		job1.setMapperClass(Q4Map1.class);
 		job1.setReducerClass(Q4Reduce1.class);
 
@@ -188,9 +188,9 @@ public class Question4 {
 		}
 
 		Configuration conf2 = new Configuration();
-		Job job2 = Job.getInstance(conf2, "Question4_2");
+		Job job2 = Job.getInstance(conf2, "ReduceSideJoin_2");
 
-		job2.setJarByClass(Question4.class);
+		job2.setJarByClass(ReduceSideJoin.class);
 		job2.setMapperClass(Q4Map2.class);
 		job2.setReducerClass(Q4Reduce2.class);
 
@@ -211,9 +211,9 @@ public class Question4 {
 		
 		Configuration conf3 = new Configuration();
 		conf3.set(Constants.USERDATA, otherArgs[2]);
-		Job job3 = Job.getInstance(conf3, "Question4_3");
+		Job job3 = Job.getInstance(conf3, "ReduceSideJoin_3");
 
-		job3.setJarByClass(Question4.class);
+		job3.setJarByClass(ReduceSideJoin.class);
 		job3.setMapperClass(Q4Map3.class);
 		job3.setReducerClass(Q4Reduce3.class);
 

@@ -29,7 +29,7 @@ import utils.Utils;
 import java.io.IOException;
 import java.util.HashSet;
 
-public class Question2 {
+public class Top10CommonFriends {
 
 	/* ----------------------------------- Job 1 ----------------------------------- */
 	public static class Q2Map1 extends Mapper<LongWritable, Text, Text, Text> {
@@ -98,9 +98,9 @@ public class Question2 {
 
 	public static void main(String[] args) throws Exception {
 			Configuration conf1 = new Configuration();
-			Job job1 = Job.getInstance(conf1, "Question2_1");
+			Job job1 = Job.getInstance(conf1, "Top10CommonFriends_1");
 
-			job1.setJarByClass(Question2.class);
+			job1.setJarByClass(Top10CommonFriends.class);
 			job1.setMapperClass(Q2Map1.class);
 			job1.setReducerClass(Q2Reduce1.class);
 
@@ -117,9 +117,9 @@ public class Question2 {
 				System.exit(1);
 			}
 				Configuration conf2 = new Configuration();
-				Job job2 = Job.getInstance(conf2, "Question2_2");
+				Job job2 = Job.getInstance(conf2, "Top10CommonFriends_2");
 
-				job2.setJarByClass(Question2.class);
+				job2.setJarByClass(Top10CommonFriends.class);
 				job2.setMapperClass(Q2Map2.class);
 				job2.setReducerClass(Q2Reduce2.class);
 

@@ -1,7 +1,7 @@
 package app.hadoop;
 
 /*
- *Use in-memory join to answer this question.
+ *Use in-memory join:
  *		Given any two Users (they are friends) as input, output the list of the names and the date of birth (mm/dd/yyyy) 
  *		of their mutual friends. Use the userdata.txt to get the extra user information.
  *Output format:
@@ -34,7 +34,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class Question3 {
+public class InMemoryJoin {
 	
 	public static class Q3Map1 extends Mapper<LongWritable, Text, Text, Text> {
 
@@ -121,9 +121,9 @@ public class Question3 {
 		conf1.set(Constants.INPUT_2, otherArgs[5]);
 		conf1.set(Constants.USERDATA, otherArgs[2]);
 
-		Job job1 = Job.getInstance(conf1, "Question3");
+		Job job1 = Job.getInstance(conf1, "InMemoryJoin");
 
-		job1.setJarByClass(Question3.class);
+		job1.setJarByClass(InMemoryJoin.class);
 		job1.setMapperClass(Q3Map1.class);
 		job1.setReducerClass(Q3Reduce1.class);
 
