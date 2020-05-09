@@ -2,7 +2,7 @@
 Implementing Hadoop/MapRedue to analyse the Social Network Data
 
 ### Mutual Friends 
-1.Implements a simple “Mutual/Common friend list of two friends". The key idea is that if two people are friend then they have a lot of mutual/common friends. 
+1. Implements a simple “Mutual/Common friend list of two friends". The key idea is that if two people are friend then they have a lot of mutual/common friends. 
      * Input: ``soc-LiveJournal1Adj.txt`` contains the adjacency list and the ``userdata.txt`` contains dummy data 
      * Output: One line for users ``(0,1), (20, 28193), (1, 29826), (6222, 19272), (28041, 28056)`` in the following format ``UserA,UserB TAB <Mutual/Common Friend List>``           
 2. Results
